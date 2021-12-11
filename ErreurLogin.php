@@ -4,7 +4,7 @@
 ?>
 
 <?php
-  $_SESSION['error'] = 'probeme';
+  
   header('Location: login.php');
 
 ?>

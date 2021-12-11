@@ -26,7 +26,7 @@
     }
   else
     {
-      $_SESSION['error'] = 'Probleme';
+      $_SESSION['error'] = 'Mauvais identifiant ou mot de passe';
       header('Location: login.php');
     }
 ?>

@@ -92,13 +92,13 @@ $dateFR = date('d-m-Y');
 
 
      <form action="data_processing.php" method="POST" name="formulaire">
-      <a class="inputtext"> <input type="text" name="Identifiant" /> Identifiant <br/>
+      <a class="inputtext"> <input required="required" type="text" name="Identifiant" /> Identifiant <br/>
       <a class="sexe"> <input type="radio" name="sexe" value="M"/>M
       <a class="sexe"> <input type="radio" name="sexe" value="F"/>F <br/>
-      <a class="inputtext"> <input type="text" name="E-mail" /> E-mail  <br/>
-      <a class="inputtext"> <input type="password" name="mot de passe1" /> Mot de passe <br/>
-      <a class="inputtext"> <input type="password" name="mot de passe2" /> Vérifier le mot de passe <br/>
-      <a class="inputtext"> <input type="text" name="telephone" /> Numéro de téléphone <br/>
+      <a class="inputtext"> <input required="required" type="text" name="E-mail" /> E-mail  <br/>
+      <a class="inputtext"> <input required="required" type="password" name="mot de passe1" /> Mot de passe <br/>
+      <a class="inputtext"> <input required="required" type="password" name="mot de passe2" /> Vérifier le mot de passe <br/>
+      <a class="inputtext"> <input required="required" type="text" name="telephone" /> Numéro de téléphone <br/>
       <label for="pays">Choisir un pays : </label> <br/>
       <select name="pays" id="choix-pays">
         <option value="">Choisir un pays valide</option>
