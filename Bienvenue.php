@@ -11,9 +11,12 @@
 
 
 ?>
+<style>
+h1 {color:green;}
+</style>
+<h1>Bienvenue</h1>
 
-<h1>CRINGE</h1>
-
+<p> Vous etes connecté au site avec succes
 
 <?php } ?>
 
