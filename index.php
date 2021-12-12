@@ -15,7 +15,7 @@ $dateFR = date('d-m-Y');
 
 <?php ficheCSS('index.css') ?>
 
-    <h1><u>Bienvenue sur mon site</u></h1><br/>
+    <h1 class="titredelapage"><u>Bienvenue sur mon site</u></h1><br/>
 
 <div class="div1">
 
@@ -29,7 +29,7 @@ $dateFR = date('d-m-Y');
       echo '<p class="titre" >' . "\n";
       echo $dateEN . ' <- la date en anglais ' . '<br/>' . "\n";
       echo $dateFR . ' <- la date en français cette fois ' . '<br/>' . "\n";
-      echo '<a class="hyperliens class="titre"" target="_blank" href="https://www.youtube.com/watch?v=AWOyEIuVzzQ">Bing Chilling </a>' . '<br/>';
+      echo '<a class="hyperliens" class="titre" target="_blank" href="https://www.youtube.com/watch?v=AWOyEIuVzzQ">Bing Chilling </a>' . '<br/>';
       echo 'Une surpise si tu clique (calculator)<a class="hyperliens" target="_blank" href="calculator.php"> là :3 </a>' . '<br/>';
 
 

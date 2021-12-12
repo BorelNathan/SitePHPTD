@@ -1,14 +1,14 @@
-h1 {
+.titredelapage {
     color:#FF0000;
     font-family: monospace;
     text-align: center;
-    font-size: 45;
+    font-size: 40px;
 
     }
 p {
     color:white;
     font-family: monospace;
-    font-size: 17;
+    font-size: 15px;
 
   }
 
