@@ -11,9 +11,17 @@
     <body>
 <?php
 }
+
 ?>
 
 <?php function end_page(){ ?>
     </body>
   </html>
+<?php } ?>
+
+
+<?php function ficheCSS($css){ ?>
+  <style>
+  <?php include $css; ?>
+  </style>
 <?php } ?>
