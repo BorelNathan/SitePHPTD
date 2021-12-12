@@ -11,9 +11,8 @@ $dateFR = date('d-m-Y');
 
 <?php
   start_page('Page principale');
+  ficheCSS('index.css') 
 ?>
-
-<?php ficheCSS('index.css') ?>
 
     <h1 class="titredelapage"><u>Bienvenue sur mon site</u></h1><br/>
 
