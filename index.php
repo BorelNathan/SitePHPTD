@@ -9,86 +9,127 @@ $dateFR = date('d-m-Y');
 ?>
 
 <style>
-  h1 {color:#FF0000;
+  h1 {
+      color:#FF0000;
       font-family: monospace;
-      padding-left: 40%;
+      text-align: center;
       font-size: 45;
 
       }
-  p {color:blue;
+  p {
+      color:white;
       font-family: monospace;
       font-size: 17;
 
     }
-  .titre{
-    padding-left: 10%;
-    padding-top: 30px;
+
+  .titre {
+      padding-left: 10%;
+      padding-top: 30px;
 
 
   }
-  .hyperliens {color:#FF0000;
-      font-family: monospace;
-      font-size: 17;
-    }
+  .hyperliens {
 
-
-    form {
       font-family: monospace;
       font-size: 18;
-      padding-left: 65%;
-      padding-top: 150px;
+      font-weight: bolder;
+      color: white;
+  }
 
-    }
     .button {
       display: inline-block;
-      background-color: #FF0000;
+      background-color: #004296;
       border-radius: 10px;
       color: #eeeeee;
       text-align: center;
       font-size: 15px;
-      padding: 20px;
+      padding: 10px;
       width: 100px;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
       cursor: pointer;
       margin: 5px;
-      }
+      font-weight: bold;
+  }
     .inputtext{
-      color: purple;
-      font-size: 20px;
-    }
+      display: grid;
+      background-color: #0070FF;
+      border-radius: 10px;
+      color: #eeeeee;
+      font-size: 15px;
+      padding: 10px;
+      font-weight: bold;
+      margin-right: 220px;
+      margin-bottom: 10px;
+
+
+  }
     .sexe{
-      color: purple;
+
       font-size: 20px;
       font-weight: bold;
-      padding: 20px;
-    }
+      padding: 90px;
+  }
     .connection{
       padding-left: 65%;
+      font-weight: bolder;
+      color: white;
+  }
+    .formulaire{
+      background: rgb(63,94,251);
+      background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,223,252,1) 100%);
+      padding: 10px;
+      font-family: monospace;
+      font-size: 18;
+      border-radius: 10px;
+      margin-left: 500px;
+      margin-right: 500px;
+      padding-left: 200px;
+      color: white;
+  }
+    .div1{
+      background: rgb(131,58,180);
+      background: linear-gradient(149deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+      margin-left: 500px;
+      margin-right: 500px;
+      border-radius: 10px;
+
     }
+
+
 
 </style>
 
 <?php
   start_page('Page principale');
 ?>
+
+
+    <h1><u>Bienvenue sur mon site</u></h1><br/>
+
+<div class="div1">
+
     <?php
-      echo '<h1>Bienvenue sur mon site</h1><br/>' . "\n";
-      echo '<p class="titre">nyaaaa</p><br/>';
-      echo '<p class="titre">d\'ailleurs ton ip c\'est ' . "$iplocal" . ' gros bakaaaa >///< ' . '</br>';
-      echo 'd\'ailleurs l\'ip du serveur c\'est ' . "$ipserv" . '</br>';
-      echo 'd\'ailleurs le software du serveur c\'est ' . "$servsoft";
+
+
+      echo '<p class="titre">Nyaaaa</p><br/>';
+      echo '<p class="titre">D\'ailleurs ton ip c\'est ' . "$iplocal" . ' gros bakaaaa >///< ' . '</br>';
+      echo 'D\'ailleurs l\'ip du serveur c\'est ' . "$ipserv" . '</br>';
+      echo 'D\'ailleurs le software du serveur c\'est ' . "$servsoft";
       echo '<p class="titre" >' . "\n";
       echo $dateEN . ' <- la date en anglais ' . '<br/>' . "\n";
       echo $dateFR . ' <- la date en français cette fois ' . '<br/>' . "\n";
-      echo '<a class="hyperliens class="titre"" target="_blank" href="https://www.youtube.com/watch?v=AWOyEIuVzzQ">Bing Chilling </a>' . '<br/>' . "\n";
-      echo 'Une surpise si tu clique (calculator)<a class="hyperliens" target="_blank" href="calculator.php"> là :3 </a>';
+      echo '<a class="hyperliens class="titre"" target="_blank" href="https://www.youtube.com/watch?v=AWOyEIuVzzQ">Bing Chilling </a>' . '<br/>';
+      echo 'Une surpise si tu clique (calculator)<a class="hyperliens" target="_blank" href="calculator.php"> là :3 </a>' . '<br/>';
+
 
      ?>
-<p>
-     <br>
+     <br/>
+</div>
+
+
+<div class="formulaire">
+  <p>
+
 
 
      <form action="data_processing.php" method="POST" name="formulaire">
@@ -113,8 +154,10 @@ $dateFR = date('d-m-Y');
      <input class="button" type="submit" name="action" value="S'inscrire" /> Soumettre le formulaire <br/>
    </form><br/>
 
-     <a class="hyperliens connection" target="_blank" href="login.php">Se connecter </a>
-</p>
+     <a class="connection" target="_blank" href="login.php">Se connecter </a>
+   </p>
+</div>
+
 <?php
   end_page();
 ?>
