@@ -41,7 +41,7 @@ $dateFR = date('d-m-Y');
       display: inline-block;
       background-color: #004296;
       border-radius: 10px;
-      color: #eeeeee;
+      color: white;
       text-align: center;
       font-size: 15px;
       padding: 10px;
@@ -49,7 +49,17 @@ $dateFR = date('d-m-Y');
       cursor: pointer;
       margin: 5px;
       font-weight: bold;
+      margin-top: 15px;
+      margin-left: 35%;
   }
+
+    input[type="submit"].button:hover{
+      color: #0C00FF;
+      background-color: #008BFF;
+
+  }
+
+
     .inputtext{
       display: grid;
       background-color: #0070FF;
@@ -59,10 +69,10 @@ $dateFR = date('d-m-Y');
       padding: 10px;
       font-weight: bold;
       margin-right: 220px;
-      margin-bottom: 10px;
-
+      margin-bottom: 5px;
 
   }
+
     .sexe{
 
       font-size: 20px;
@@ -74,6 +84,7 @@ $dateFR = date('d-m-Y');
       font-weight: bolder;
       color: white;
   }
+
     .formulaire{
       background: rgb(63,94,251);
       background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,223,252,1) 100%);
@@ -140,18 +151,20 @@ $dateFR = date('d-m-Y');
       <a class="inputtext"> <input required="required" type="password" name="mot de passe1" /> Mot de passe <br/>
       <a class="inputtext"> <input required="required" type="password" name="mot de passe2" /> Vérifier le mot de passe <br/>
       <a class="inputtext"> <input required="required" type="text" name="telephone" /> Numéro de téléphone <br/>
+      <br/>
       <label for="pays">Choisir un pays : </label> <br/>
       <select name="pays" id="choix-pays">
-        <option value="">Choisir un pays valide</option>
-        <option value="france">France</option>
+        <option value="">France</option>
+        <option value="france">Belgique</option>
         <option value="allemagne">Allemagne</option>
         <option value="italie">Italie</option>
         <option value="espagne">Espagne</option>
         <option value="corse">Corse</option>
         <option value="algérie">Algérie</option>
       </select> <br/>
-     <input type="checkbox" name="CG" required="required"/> Cochez pour accepter les conditions générales <br/>
-     <input class="button" type="submit" name="action" value="S'inscrire" /> Soumettre le formulaire <br/>
+     <label>Cochez pour accepter les conditions générales</label>
+     <input type="checkbox" name="CG" required="required"/>  <br/>
+     <input class="button" type="submit" name="action" value="S'inscrire" /> <br/>
    </form><br/>
 
      <a class="connection" target="_blank" href="login.php">Se connecter </a>
