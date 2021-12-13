@@ -11,7 +11,7 @@ $dateFR = date('d-m-Y');
 
 <?php
   start_page('Page principale');
-  ficheCSS('index.css') 
+  ficheCSS('index.css')
 ?>
 
     <h1 class="titredelapage"><u>Bienvenue sur mon site</u></h1><br/>
@@ -65,7 +65,7 @@ $dateFR = date('d-m-Y');
      <input type="checkbox" name="CG" required="required"/>  <br/>
      <input class="button" type="submit" name="action" value="S'inscrire" /> <br/>
    </form><br/>
-     <a class="connection" target="_blank" href="login.php">Se connecter </a>
+     <a class="connection" href="login.php">Se connecter </a>
    </p>
 </div>
 

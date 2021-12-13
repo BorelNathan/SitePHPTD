@@ -10,6 +10,7 @@ body {
     font-family: monospace;
     text-align: center;
     font-size: 40px;
+    -webkit-text-stroke: 2px black;
 
     }
 p {
@@ -35,7 +36,7 @@ p {
 
   .button {
     display: inline-block;
-    background-color: #004296;
+    background-color: red;
     border-radius: 10px;
     color: white;
     text-align: center;
@@ -50,14 +51,13 @@ p {
 }
 
   input[type="submit"].button:hover{
-    color: #0C00FF;
-
+    color: orange;
 }
 
 
   .inputtext{
     display: grid;
-    background-color: #0070FF;
+    background-color: rgb(251,172,63);
     border-radius: 10px;
     color: #eeeeee;
     font-size: 15px;
@@ -78,11 +78,12 @@ p {
     padding-left: 65%;
     font-weight: bolder;
     color: white;
+    font-size: 18px;
 }
 
   .formulaire{
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,223,252,1) 100%);
+    background: rgb(251,172,63);
+    background: radial-gradient(circle, rgba(251,172,63,1) 0%, rgba(252,70,70,1) 100%);
     padding: 10px;
     font-family: monospace;
     font-size: 18;
@@ -93,8 +94,8 @@ p {
     color: white;
 }
   .div1{
-    background: rgb(131,58,180);
-    background: linear-gradient(149deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: rgb(251,172,63);
+    background: radial-gradient(circle, rgba(251,172,63,1) 0%, rgba(252,70,70,1) 100%);
     margin-left: 500px;
     margin-right: 500px;
     border-radius: 10px;
