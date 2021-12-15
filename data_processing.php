@@ -26,8 +26,7 @@
     mail($email, $id, $message);
     $today = date('Y-m-d');
     echo 'Mail envoyé et inscription enregistrer' . '<br/>';
-    $query = 'INSERT INTO user (date, email, motdepasse, sexe, telephone, pays, login) VALUES (\'' . $today . '\', \''
-      . $email . '\' , \'' . $password . '\' , \'' . $sexe . '\' , \'' . $tel . '\' , \'' . $pays . '\' , \'' . $login . '\')';
+    $query = 'INSERT INTO user (date, email, motdepasse, sexe, telephone, pays, login) VALUES (\'' . $today . '\', \''. $email . '\' , \'' . $password . '\' , \'' . $sexe . '\' , \'' . $tel . '\' , \'' . $pays . '\' , \'' . $login . '\')';
     echo '<a href="index.php"> Revenir a la page principale </a>';
     $dbLink = mysqli_connect('mysql-testbd.alwaysdata.net', 'testbd', 'Hermione2012$') or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
     mysqli_select_db($dbLink , 'testbd_user') or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink));
@@ -45,9 +44,10 @@
 
 
     }
-  else{
-    echo '<br/><strong>Bouton non géré !</strong><br/>';
-  }
+   else
+    {
+      header('Location: index.php');
+    }
 
 ?>
 
